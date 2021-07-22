@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Name and Marks</title>
+</head>
+<body>
+	<h1>Enter your Name and marks of three subjects.</h1>
+	<hr>	
+	<form name="form1">	
+		Enter Name <input type="text" name="text1" value=" " /><br>
+		subject1 <input type="text" name="n1"><br>
+		subject2 <input type="text" name="n2"><br>
+		subject3 <input type="text" name="n3"><br><br>
+		<input type="button" value=" Display "onclick='display()' /><br><br>
+		Total Marks <input type="text" name="tt"><br>
+		Percentage <input type="text" name="per"><br>
+	</form>
+	<script type="text/javascript">
+		function display() {
+			var marks=[],total=0;
+			marks[0]=parseInt(document.form1.n1.value);
+			marks[1]=parseInt(document.form1.n2.value);
+			marks[2]=parseInt(document.form1.n3.value);
+			for (var i = 0; i < marks.length; i++) {
+				total=total+marks[i];
+			}
+			document.form1.tt.value=total;
+			document.form1.per.value=(total/3)+'%';
+		}
+	</script>
+</body>
+</html>

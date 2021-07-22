@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form name="form1">
+		<table border="2">
+			<tr>
+				<td><input type="text" name="price1"></td>
+				<td><select name="quality1"><option value="1">1</option>
+					<option value="2">2</option></select></td>
+					<td><input type="text" name="total">
+					<input type="button" name="Generate bill" onclick="bill()"></td>
+			</tr>
+		</table>
+	</form>
+	<script type="text/javascript">
+		function bill(){
+			var p1=document.form1.price1.value;
+			var q1=document.form1.quality1.value;
+			var t=p1*q1;
+			document.form1.total.value=t;
+		}
+	</script>
+</body>
+</html>

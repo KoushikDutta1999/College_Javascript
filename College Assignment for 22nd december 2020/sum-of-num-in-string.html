@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sum of all digits in string</title>
+</head>
+<body>
+	<h1>Compute the sum of all digits that occur in a given string</h1><hr>
+	<form name="f1">
+		Enter number<input type="text" name="num">
+		<input type="button" value="Add" onclick="calc()"><br><br>
+		Sum<input type="text" name="sum">
+	</form>
+	<script>
+		function calc()
+		{
+			var n,r=0;
+			n=	document.f1.num.value;
+			while(n>0)
+			{
+				r+=parseInt(n%10);
+				n=parseInt(n/10);
+			}
+			document.f1.sum.value=r;
+		}
+	</script>
+</body>
+</html>

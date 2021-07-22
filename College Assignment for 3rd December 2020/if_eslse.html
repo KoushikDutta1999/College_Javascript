@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form name="form1">
+Input the marks<input type="text" name="text1" value=" " />
+<br /><br />
+<input type="button" value="Marks check"
+onclick='marksgrade()' />
+</form>
+<script>
+function marksgrade(){
+	var a,b;
+	a=document.form1.text1.value;
+	if(a>=80)
+		b="Distriction";
+	else if (a>=60&&a<80)
+		b="First Division";
+	else if (a>=50&&a<60)
+		b="Second Division";
+	else if (a>=40&&a<50)
+		b="Third Division";
+	else
+		b="Fail";
+	document.form1.text1.value=b;
+}
+</script>
+</body>
+</html>

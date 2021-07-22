@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculate Fahrenheit to Celcius</title>
+</head>
+<body>
+	<form name="form1">
+	Enter temperature in Fahrenheit <input type="text" name="text1" value=" " /><br><br>
+	<input type="button" value="change"onclick='temp()' />
+	</form>
+	<script type="text/javascript">
+		function temp(){
+			var c,f;
+			f=document.form1.text1.value;
+			c= (f-32)*5/9;
+			document.form1.text1.value=c+' c';
+		}
+	</script>
+</body>
+</html>
