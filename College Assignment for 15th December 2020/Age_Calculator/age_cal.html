@@ -1,8 +1,9 @@
 <html>
 <head>
+    <title>Calculate Age</title>
 </head>
 <body>
-<script>
+<!-- <script>
  //var d=new Date(year,month,day,hour,minute,seconds)
 var d=new Date();
 document.write(d);
@@ -32,11 +33,13 @@ var current=c.getFullYear();
 var age1=current-d;
 document.form1.age.value=age1;
 }
-</script>
+</script> -->
+
+<script src="script.js"></script>
 <form name="form1" method=post>
-Enter Birth Year<input type="text" name="year" >
-Age<input type="text" name="age">
-<input type=button value="Calculate age" onclick=calage()>
+Enter Birth Year <input type="text" name="year" ><br>
+<input type=button value="Calculate age" onclick=calage()><br>
+Age <input type="text" name="age">
 </form>
 </body>
 </html>

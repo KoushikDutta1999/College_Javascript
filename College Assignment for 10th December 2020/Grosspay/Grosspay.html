@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>calculate the gross pay</title>
+	<title>Calculate the Gross Pay</title>
 </head>
 <body>
+	<h1>Calculate the Gross Pay</h1>
 	<form name="form1">
 	Input Name <input type="text" name="name" value=" " /><br>
 	Basic Pay <input type="text" name="bp"><br><br>
 	<input type="button" value=" calculate " onclick="cal()"><br><hr>
-	Daily Allowance <input type="text" name="da"><br>
-	House Rent Allowance <input type="text" name="hra"><br>
-	Medical Allowance <input type="text" name="ma"><br>
-	Provident Fund <input type="text" name="pf"><br>
+	Daily Allowance(25%) <input type="text" name="da"><br>
+	House Rent Allowance(15%) <input type="text" name="hra"><br>
+	Medical Allowance(10%) <input type="text" name="ma"><br>
+	Provident Fund(12%) <input type="text" name="pf"><br>
 	Net Pay <input type="text" name="np"><br>
 	Gross Pay <input type="text" name="gp"><br>
 	</form>
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		function cal() {
 			var bp=Number(document.form1.bp.value);
 
@@ -30,6 +31,8 @@
 			document.form1.np.value=eval(bp+hra+ma+pf);
 			document.form1.gp.value=document.form1.np.value-document.form1.pf.value;
 		}
-	</script>
+	</script> -->
+
+	<script src="script.js"></script>
 </body>
 </html>

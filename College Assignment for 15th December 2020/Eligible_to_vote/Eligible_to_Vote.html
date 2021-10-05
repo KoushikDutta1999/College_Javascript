@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Eligible for Vote</title>
+	<title>Eligible to Vote</title>
 </head>
 <body>
 	<h1>Check for Vote in India</h1>
 	<form name="form1">
-		Enter your Birth Year<input type="text" name="Year"><br><br>
-		Nationality<input type="radio" name="national" value="Indian">
+		Enter your Birth Year <input type="text" name="Year"><br><br>
+		Nationality <input type="radio" name="national" value="Indian">
 		<label for="Indian">Indian</label>
 		<input type="radio" name="national" value="Non-Indian">
 		<label for="Non-Indian">Non-Indian</label><br><br>
 		<input type="submit" value="submit" onclick="cal()">
 	</form>
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		function cal(){
 			var current=new Date().getFullYear();
 			var year=current-document.form1.Year.value;
 			var id=document.form1.national.value;
 			if (year>=18&&id=="Indian")
-				document.write("Eligible For Vote");
+				document.write("Eligible to Vote");
 			else
-				document.write("Not Eligible");
+				document.write("Not Eligible to Vote");
 		}
-	</script>
+	</script> -->
 
+	<script src="script.js"></script>
 </body>
 </html>
